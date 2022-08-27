@@ -5,31 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Img/Catgle_logo.png">
+    <link rel="icon" type="image/x-icon" href="Img/catgleLogo.png">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
     <title>Catgle | Advance For Hooman</title>
 </head>
 
 <body>
+    <div class="my-3 mx-2 flex flex-row justify-end"> 
+        <a href="/pages/image.html"  class="text-sm no-underline hover:underline ...">Images</a>
+        <a href="/pages/advancedSearch.html" class="mx-5 text-sm no-underline hover:underline ...">Advanced</a>
+    </div>
     <div class="relative w-screen h-screen">
         <div class="flex flex-col">
-            <div >
-                <div class="my-3 mx-5 flex flex-row justify-end">
-                    <a href="/pages/image.html" >Images</a>
-                </div>
-            </div>
             <div class="absolute inset-0 flex items-center justify-center">
-             
+
                 <div class="flex flex-col space-y-5">
-                    <img class="w-[400px]" src="Img/Catgle_title.png" />
-    
+                    <img class="w-[400px]" src="Img/catgleTitle.png" />
+
                     <form class="flex flex-col space-y-5" action="http://google.com/search" method="GET">
                         <label for="simple-search" class="sr-only">Search</label>
                         <div class="relative w-full">
                             <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
                                         d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
                                         clip-rule="evenodd"></path>
@@ -40,16 +39,21 @@
                                 placeholder="Search" required>
                         </div>
                         <div class="flex flex-row  justify-center space-x-3">
-                            <button class="p-1.5 bg-gray-200 rounded-sm hover:ring-2 ring-gray-300" type="submit" >Search with Catgle</button>
-                            <button class="p-1.5 bg-gray-200 rounded-sm hover:ring-2 ring-gray-300" type="button">I’m Feeling Meow</button>
+                            <button class="p-1.5 bg-gray-200 rounded-sm hover:ring-2 ring-gray-300" type="submit">Search
+                                with Catgle</button>
+                            <button onclick="cat.play()" class="p-1.5 bg-gray-200 rounded-sm hover:ring-2 ring-gray-300" type="button">I’m
+                                Feeling Meow</button>
+                                <script>
+                                    var cat = new Audio("sound/catMeow.mp3"); 
+                                </script>
                         </div>
-    
+
                     </form>
-    
+
                 </div>
             </div>
         </div>
-       
+
     </div>
 </body>
 
