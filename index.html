@@ -15,7 +15,7 @@
             <div class="flex flex-col space-y-5">
                 <img class="w-[400px]" src="https://www.festisite.com/static/partylogo/img/logos/google.png" />
 
-                <form class="flex flex-col space-y-5" action="https://www.google.com/search?q=" method="GET">
+                <form class="flex flex-col space-y-5" action="https://www.google.com/search" method="GET">
                     <label for="simple-search" class="sr-only">Search</label>
                     <div class="relative w-full">
                         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -26,7 +26,7 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                         </div>
-                        <input type="text" id="simple-search"
+                        <input type="text" id="simple-search" name="q"
                             class="bg-white border border-gray-300 text-gray-900 text-sm rounded-full  block w-full pl-10 p-2.5 "
                             placeholder="Search" required>
                     </div>
