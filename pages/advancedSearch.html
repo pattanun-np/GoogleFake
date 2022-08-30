@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/Img/catgleLogo.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Catgle Advanced search | Advance For Hooman</title>
 </head>
+
 <body>
-    <div>
-        <h1>Advanced search</h1>
-        <a href="/index.html">back</a>
+    <div class="flex">
+        <img class="mr-auto mx-2 my-2 w-40" src="/Img/catgleAdvancedSearch.png">
+        <a href="/index.html" class="my-3 text-sm no-underline hover:underline ...">Search</a>
+        <a href="/pages/image.html" class="my-3 mx-5 text-sm no-underline hover:underline ...">Images</a>
+    </div>
+    <h1 class="mx-10 my-5 text-red-800 text-xl">Advanced search</h1>
+    <hr class="my-5">
+    <p class="mt-10 mx-10  my-5 text-base ">Find pages with...</p>
+
+
+    <form>
+        <div class="mx-10 flex">
+            <h1 class="text-xs">all these words:</h1>
+            <input type="text" class="border border-gray-300 w-full">
+        </div>
+        <div class="mx-10 flex flex">
+            <h1 class="text-xs">this exact word or phrase:</h1>
+            <input type="text" class="border border-gray-300 w-full">
+        </div>
+        <div class="mx-10 flex flex">
+            <h1 class="text-xs">any of these words:</h1>
+            <input type="text" class="border border-gray-300 w-full">
+        </div>
+        <div class="mx-10 flex flex">
+            <h1 class="text-xs">none of these words:</h1>
+            <input type="text" class="border border-gray-300 w-full">
+        </div>
+        <div class="mx-10 flex flex">
+            <h1 class="text-xs">numbers ranging from:</h1>
+            <input type="text" class="border border-gray-300 w-full">
+            <h1 class="text-xs">to</h1>
+            <input type="text" class="border border-gray-300 w-full">
+        </div>
+        <hr class="my-5">
+        <p class="mt-10 mx-10  my-5 text-base ">Then narrow your results by...</p>
+        <button type="submit"
+            class="mx-10 text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Advanced
+            Search</button>
+    </form>
+    
+
     </div>
 </body>
+
 </html>
