@@ -16,41 +16,42 @@
         <a href="/index.html" class="my-3 text-sm no-underline hover:underline ...">Search</a>
         <a href="/pages/image.html" class="my-3 mx-5 text-sm no-underline hover:underline ...">Images</a>
     </div>
-    <h1 class="mx-10 my-5 text-red-800 text-xl">Advanced search</h1>
+    <p class="mx-10 my-5 text-red-800 text-xl">Advanced search</p>
     <hr class="my-5">
     <p class="mt-10 mx-10  my-5 text-base ">Find pages with...</p>
 
 
-    <form>
-        <div class="mx-10 flex">
-            <h1 class="text-xs">all these words:</h1>
-            <input type="text" class="border border-gray-300 w-full">
+    <form action="https://google.com/search" class="flex flex-col space-y-5">
+        <div class="mx-10 flex flex-row w-108">
+            <p class="text-sm w-64">all these words:</p>
+            <input type="text" class="border border-gray-300 w-full " name="as_q">
+            <div class="">
+                <p class="text-sm w-64 flex-col hidden xl:block">type essential: Meow Catty</p>
+            </div>
         </div>
         <div class="mx-10 flex flex">
-            <h1 class="text-xs">this exact word or phrase:</h1>
-            <input type="text" class="border border-gray-300 w-full">
+            <p class="text-sm w-64">this exact word or phrase:</p>
+            <input type="text" class="border border-gray-300 w-full" name="as_epq">
         </div>
         <div class="mx-10 flex flex">
-            <h1 class="text-xs">any of these words:</h1>
-            <input type="text" class="border border-gray-300 w-full">
+            <p class="text-sm w-64">any of these words:</p>
+            <input type="text" class="border border-gray-300 w-full" name="as_oq">
         </div>
         <div class="mx-10 flex flex">
-            <h1 class="text-xs">none of these words:</h1>
-            <input type="text" class="border border-gray-300 w-full">
+            <p class="text-sm w-64">none of these words:</p>
+            <input type="text" class="border border-gray-300 w-full" name="as_eq">
         </div>
-        <div class="mx-10 flex flex">
-            <h1 class="text-xs">numbers ranging from:</h1>
-            <input type="text" class="border border-gray-300 w-full">
-            <h1 class="text-xs">to</h1>
-            <input type="text" class="border border-gray-300 w-full">
+        <div class="mx-10 flex flex space-x-3">
+            <p class="text-sm w-96">numbers ranging from:</p>
+            <input type="text" class="border border-gray-300  w-64" name="as_nlo">
+            <p class="text-sm">to</p>
+            <input type="text" class="border border-gray-300 w-64" name="as_nhi">
         </div>
-        <hr class="my-5">
-        <p class="mt-10 mx-10  my-5 text-base ">Then narrow your results by...</p>
         <button type="submit"
             class="mx-10 text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Advanced
             Search</button>
     </form>
-    
+
 
     </div>
 </body>
