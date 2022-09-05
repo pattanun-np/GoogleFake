@@ -32,15 +32,16 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <input type="text" id="simple-search" name="q"
+                            <input type="text" name="q" id="simple-search" 
                                 class="bg-white border border-gray-300 text-gray-900 text-sm rounded-full  block w-full pl-10 p-2.5 "
                                 placeholder="Search" required>
                         </div>
                         <div class="flex flex-row  justify-center space-x-3">
-                            <button class="p-1.5 bg-gray-200 rounded-sm hover:ring-2 ring-gray-300" type="submit">Search
+                            <button class="p-1.5 bg-gray-200 rounded-sm hover:ring-2 ring-gray-300" type="submit"
+                                name="btnK">Search
                                 with Catgle</button>
                             <button onclick="cat.play()" class="p-1.5 bg-gray-200 rounded-sm hover:ring-2 ring-gray-300"
-                                type="button">I’m Feeling Meow</button>
+                                type="submit" name="btnI" >I’m Feeling Meow</button>
                             <script>
                                 var cat = new Audio("sound/catMeow.mp3"); 
                             </script>
@@ -51,4 +52,5 @@
         </div>
     </div>
 </body>
+
 </html>
